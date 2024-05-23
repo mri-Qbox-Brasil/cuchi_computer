@@ -116,7 +116,7 @@ else
         joaat("prop_monitor_li"),
         joaat("prop_ld_monitor_01"),
         joaat("sf_prop_sf_monitor_01a"),
-        joaat("prop_monitor_01a"),
+        -- joaat("prop_monitor_01a"),
         joaat("v_res_monitor"),
         joaat("v_serv_ct_monitor02"),
         joaat("v_serv_ct_monitor07"),
