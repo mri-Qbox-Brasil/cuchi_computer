@@ -61,7 +61,7 @@ end)
 
 RegisterNUICallback("NUIOk", function(_, cb)
     NUIOk = true
-    cb("OK")
+    cb({ locale = Config.Locale })
 end)
 
 local dataWaiting = false

@@ -270,6 +270,7 @@ if propsLength > 0 then
             if Config.TargetType == "ox" then
                 exports["ox_target"]:addModel(propsList, {
                     label = GetLocale("target_computer"),
+                    icon = "fa-solid fa-computer-mouse",
                     distance = 2.0,
                     onSelect = function(data)
                         OpenUI(GetEntityCoords(data.entity))

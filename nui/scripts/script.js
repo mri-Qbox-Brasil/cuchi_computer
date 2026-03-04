@@ -265,7 +265,11 @@ document.addEventListener("DOMContentLoaded", () => {
     {
         method: "POST",
         body: null
-    });
+    }).then(resp => resp.json()).then(data => {
+        if (typeof LocaleWasEmpty !== 'undefined' && LocaleWasEmpty && data.locale) {
+            SetLocale(data.locale);
+        }
+    }).catch(() => {});
 
     if (Applications["mail"].usable && !Applications["mail"].hide) {
         document.getElementById("mail-connection-signup").onclick = () => {
